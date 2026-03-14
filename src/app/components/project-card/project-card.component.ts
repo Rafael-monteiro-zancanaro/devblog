@@ -1,5 +1,6 @@
 import { Component, input } from '@angular/core';
 import { GHRepo } from '../../domain/GHRepo';
+import { ColorOf, CSSColor, Language } from '../../data/language-map';
 
 @Component({
   selector: 'app-project-card',
@@ -9,5 +10,9 @@ import { GHRepo } from '../../domain/GHRepo';
 })
 export class ProjectCardComponent {
   project = input.required<GHRepo>();
+
+  get labelColorOfProject(): CSSColor {
+    return ColorOf[this.project().language as Language] || '#FFF';
+  }
 
 }

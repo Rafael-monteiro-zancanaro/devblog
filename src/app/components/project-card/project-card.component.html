@@ -18,10 +18,9 @@
 
     <div class="flex flex-row justify-start items-center flex-wrap gap-4">
         <div class="flex flex-row items-center">
-            <div class="w-2 h-2 rounded-full bg-blue-500 mr-1"></div>
+            <div [style.background]="labelColorOfProject" [class]="`w-2 h-2 rounded-full mr-1`"></div>
             <p class="text-xs sm:text-sm">{{project().language}}</p>
         </div>
 
-        <!-- Se tiver mais informações, adicionar aqui -->
     </div>
 </div>
