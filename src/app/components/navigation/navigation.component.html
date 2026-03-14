@@ -1,23 +1,35 @@
-<div class="grid col-span-1 pr-8">
-    <ul class="font-tech font-light">
-        <li class="pb-2 ">
-
-            <a routerLink="" class="text-linkinactive hover:text-linkactive flex flex-row items-center">
-                <home-outline-icon class="mr-1" />
-                Home</a>
+<div class="w-full md:pr-8">
+    <!-- Menu horizontal em mobile, vertical em desktop -->
+    <ul class="font-tech font-light flex flex-row flex-wrap md:flex-col gap-4 md:gap-0 justify-center">
+        <li class="md:pb-2">
+            <a routerLink="/" routerLinkActive="text-linkactive"
+                class="text-linkinactive hover:text-linkactive whitespace-nowrap text-sm md:text-base">
+                Home
+            </a>
         </li>
-        <li class="pb-2">
-            <a routerLink="" class="text-linkinactive hover:text-linkactive">Experience</a>
+        <li class="md:pb-2">
+            <a routerLink="/experience" routerLinkActive="text-linkactive"
+                class="text-linkinactive hover:text-linkactive whitespace-nowrap text-sm md:text-base">
+                Experience
+            </a>
         </li>
-        <li class="pb-2">
-            <a routerLink="" class="text-linkinactive hover:text-linkactive">Projects</a>
+        <li class="md:pb-2">
+            <a routerLink="/projects" routerLinkActive="text-linkactive"
+                class="text-linkinactive hover:text-linkactive whitespace-nowrap text-sm md:text-base">
+                Projects
+            </a>
         </li>
-        <li class="pb-2">
-            <a routerLink="" class="text-linkinactive hover:text-linkactive">Contact</a>
+        <li class="md:pb-2">
+            <a routerLink="/contact" routerLinkActive="text-linkactive"
+                class="text-linkinactive hover:text-linkactive whitespace-nowrap text-sm md:text-base">
+                Contact
+            </a>
         </li>
-        <li class="pb-2">
-            <a routerLink="" class="text-linkinactive hover:text-linkactive">Setup</a>
+        <li class="md:pb-2">
+            <a routerLink="/setup" routerLinkActive="text-linkactive"
+                class="text-linkinactive hover:text-linkactive whitespace-nowrap text-sm md:text-base">
+                Setup
+            </a>
         </li>
     </ul>
-
 </div>

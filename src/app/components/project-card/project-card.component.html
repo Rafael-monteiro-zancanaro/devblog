@@ -1,19 +1,27 @@
-<div class="flex flex-col border-2 border-palletemagenta p-8 rounded-2xl shadow-xl bg-shadow-xl mb-2">
-    <div class="flex flex-row justify-between items-center pb-5">
-        <a class="font-tech text-2xl text-linkinactive hover:text-linkactive underline" [href]="project().html_url"
-            target="_blank">{{project().name}}</a>
+<div class="flex flex-col border-2 border-palletemagenta p-4 sm:p-6 md:p-8 rounded-2xl shadow-xl bg-shadow-xl mb-2">
+    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 pb-5">
+        <a class="font-tech text-xl sm:text-2xl text-linkinactive hover:text-linkactive underline break-words"
+            [href]="project().html_url" target="_blank">
+            {{project().name}}
+        </a>
+
         @if(project().archived) {
-        <div class="border-2 border-palleteyellow rounded-2xl p-2">
-            <p class="text-sm text-palleteyellow">Archived</p>
+        <div class="border-2 border-palleteyellow rounded-2xl p-2 self-start sm:self-auto">
+            <p class="text-xs sm:text-sm text-palleteyellow whitespace-nowrap">Archived</p>
         </div>
         }
     </div>
-    <p class="font-sans text-gray-500 pb-5">{{project().description}}</p>
 
-    <div class="flex flex-row justify-start items-center">
-        <div class="flex flex-row items-center pr-5">
+    <p class="font-sans text-sm sm:text-base text-gray-500 pb-5 break-words">
+        {{project().description}}
+    </p>
+
+    <div class="flex flex-row justify-start items-center flex-wrap gap-4">
+        <div class="flex flex-row items-center">
             <div class="w-2 h-2 rounded-full bg-blue-500 mr-1"></div>
-            <p class="text-sm">{{project().language}}</p>
+            <p class="text-xs sm:text-sm">{{project().language}}</p>
         </div>
+
+        <!-- Se tiver mais informações, adicionar aqui -->
     </div>
 </div>
