@@ -1,0 +1,19 @@
+<div class="flex flex-col border-2 border-palletemagenta p-8 rounded-2xl shadow-xl bg-shadow-xl mb-2">
+    <div class="flex flex-row justify-between items-center pb-5">
+        <a class="font-tech text-2xl text-linkinactive hover:text-linkactive underline" [href]="project().html_url"
+            target="_blank">{{project().name}}</a>
+        @if(project().archived) {
+        <div class="border-2 border-palleteyellow rounded-2xl p-2">
+            <p class="text-sm text-palleteyellow">Archived</p>
+        </div>
+        }
+    </div>
+    <p class="font-sans text-gray-500 pb-5">{{project().description}}</p>
+
+    <div class="flex flex-row justify-start items-center">
+        <div class="flex flex-row items-center pr-5">
+            <div class="w-2 h-2 rounded-full bg-blue-500 mr-1"></div>
+            <p class="text-sm">{{project().language}}</p>
+        </div>
+    </div>
+</div>
