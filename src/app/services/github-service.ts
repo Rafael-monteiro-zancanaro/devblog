@@ -8,7 +8,7 @@ import { GHRepo } from "../domain/GHRepo";
 })
 export class GithubService {
     httpClient = inject(HttpClient);
-    readonly API_URL: string = `http://api.github.com/users/Rafael-monteiro-zancanaro/repos`
+    readonly API_URL: string = `https://api.github.com/users/Rafael-monteiro-zancanaro/repos`
 
 
     public getRepos(): Observable<GHRepo[]> {
