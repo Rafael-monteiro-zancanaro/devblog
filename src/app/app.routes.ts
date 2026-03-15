@@ -4,6 +4,7 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { SetupComponent } from './pages/setup/setup.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { postsRoutes } from './posts/posts-routes';
 
 export const routes: Routes = [
     {
@@ -27,8 +28,10 @@ export const routes: Routes = [
         path: 'contact',
         component: ContactComponent
     },
+
+    ...postsRoutes,
     {
         path: '**',
         component: NotFoundComponent
-    }
+    },
 ];
