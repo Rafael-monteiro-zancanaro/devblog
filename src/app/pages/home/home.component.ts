@@ -11,7 +11,6 @@ import { allPosts } from '../../data/posts';
 })
 export class HomeComponent {
 
-
-  posts = signal<Array<PostCardInfo>>(allPosts)
+  posts = signal<Array<PostCardInfo>>(allPosts.sort((prev, curr) => new Date(curr.createdAt).getTime() - new Date(prev.createdAt).getTime()))
 
 }

@@ -3,7 +3,7 @@
     <div class="flex flex-col sm:justify-between sm:items-center gap-3 pb-5">
         <h1 class="text-sm font-tech">{{formattedDate()}}</h1>
         <div class="flex flex-row justify-center">
-            <img src="compiling.png" alt="VSCodium png" class="rounded-2xl">
+            <img [src]="postInfo().imageUrl" alt="VSCodium png" class="rounded-2xl">
         </div>
         <h1 class="font-display text-3xl font-semibold text-linkinactive hover:text-linkactive">{{postInfo().title}}
         </h1>
@@ -11,9 +11,11 @@
         <h2 class="font-sans text-lg text-gray-500">{{postInfo().subtitle || ''}}</h2>
 
         <div class="flex flex-row justify-between items-center w-full">
-            @for (tag of postInfo().tags; track $index) {
-            <app-tag [bgColor]="tag.color" [name]="tag.name" />
-            }
+            <div class="flex flex-col">
+                @for (tag of postInfo().tags; track $index) {
+                <app-tag [bgColor]="tag.color" [name]="tag.name" />
+                }
+            </div>
             <a [routerLink]="postInfo().postPath"
                 class="p-3 rounded-xl font-tech text-linkinactive hover:text-linkactive">Ir para post
                 <arrow-right-outline-icon />
