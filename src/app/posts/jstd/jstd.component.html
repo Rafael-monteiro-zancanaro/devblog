@@ -1,0 +1,94 @@
+<div class="w-full h-full pb-20">
+
+    <app-title title="Biblioteca Jstd"
+        subtitle="Cansado de ter que mexer com Maven, Gradle e Ivy, tive uma ideia: Simplificar o processo." />
+
+    <p class="font-sans text-lg text-justify">Já adianto: Este é um artigo sobre Java.</p>
+    <p class="font-sans text-lg pb-6 text-justify">Isso mesmo, <b>Java.</b></p>
+    <h1 class="font-sans text-3xl pb-6 text-justify"><b>Java.</b></h1>
+
+    <p class="font-sans text-3xl pb-6 text-justify">
+        Boilerplate, tipagem estrita, Orientação a objetos, JVM consome muita RAM, etc. Nossa que linguagem
+        horrível!!!1!!
+    </p>
+    <!-- fizzbuzzoutputgenerationcontextvisitorfactory -->
+    <div class="flex flex-col items-center pt-4 pb-4">
+        <img src="fizzbuzzoutputgenerationcontextvisitorfactory.png"
+            alt="FizzBuzzOutputGenerationContextVisitorFactory - Um exemplo classico de classe Java"
+            class="w-3xl rounded-2xl">
+        <p class="font-sans max-w-3/5 text-center"><b>Imagem 01:</b> Classe Java mais descritiva.</p>
+    </div>
+    <p class="font-sans text-lg pb-6 text-justify">
+        ...
+    </p>
+
+    <p class="font-sans text-lg pb-6 text-justify">
+        Agora que falei o que quem odeia a linguagem adora escutar, acho que dá pra prosseguir normalmente e conversar
+        como adultos, sobre um problema que eu senti e que você também pode sentir também com a linguagem.
+    </p>
+
+    <p class="font-sans text-lg pb-6 text-justify">
+        Fato é, eu gosto muito de Java. Quando tive meu primeiro contato com programação com 15 anos, minhas primeiras
+        aulas de algoritmos e linguagem de programação foram nessa linguagem, ao contrario do padrão C da época, e
+        Python
+        atualmente. Posteriormente assumi meu primeiro estágio desenvolvendo em SpringBoot com Angular 8 e desde então
+        Java foi quem me abriu portas no mercado de trabalho e me fez estar onde estou atualmente.
+    </p>
+    <p class="font-sans text-lg text-justify">
+        Porém uma coisa que percebia enquanto trabalhava é que o Java sempre foi engessado em relação a dependências e
+        código distribuido. O mais padrão em um projeto empresarial com Java é utilizar as funções do Kit de
+        Desenvolvimento Java (JDK) e, caso não tenha jeito, usar gerenciadores de dependencias como Maven ou Gradle,
+        onde as dependencias que são listadas em um arquivo de configuração (pom.xml/build.gradle) são baixadas,
+        compiladas e ficam disponíveis ao codigo fonte.
+    </p>
+    <p class="font-sans text-lg pb-6 text-justify">
+        A princípio não é um sistema ruim, a biblioteca padrão do Java é bem robusta e dificilmente falta alguma coisa
+        lá, precisando de algumas poucas coisas que geralmente um Guava vai possuir. Entretando, não dá pra negar que é
+        um mecanismo bastante burocrático.
+    </p>
+
+    <p class="font-sans text-lg text-justify">
+        Atualmente estou trabalhando bastante com C fora do trabalho, como um hobby. E, uma das coisas que me chama
+        atenção é justamente como as coisas funcionam naquela linguagem. Por mais difícil que alguns aspectos da
+        linguagem parecem ser, C é uma linguagem bem direta nos seus propósitos: Ao adicionar um
+        <span class="font-tech">#include&lt;stdio.h&gt;</span> o código do header stdio.h é colado no arquivo que inclui
+        ele.
+    </p>
+    <p class="font-sans text-lg pb-6 text-justify">
+        E justamente esse funcionamento dos headers em C que possibilitou a existencia das dependencias "header-only".
+        Estas dependências são arquivos de cabeçalho com todo o código/estruturas de dados necessárias para que a
+        biblioteca funcione independentemente, sendo necessário apenas baixar o cabeçalho, colar no seu código e usar.
+    </p>
+
+    <p class="font-sans text-lg text-justify">
+        Portanto, pensando nesse principio de dependências "header-only" que eu criei o projeto "Jstd". A ideia dele é
+        ser justamente uma coletânea de estruturas de dados e algoritmos que são autocontidos, sendo necessário apenas
+        copiar, colar no seu projeto Java e utilizar.
+    </p>
+
+    <p class="font-sans text-lg pb-6 text-justify">
+        Outra vantagem desta abordagem é justamente o fato do código fonte estar com VOCÊ. Isso da a liberdade de
+        justamente poder moldar o código ao seu bem-querer.
+    </p>
+
+    <p class="font-sans text-lg pb-6 text-justify">
+        Quer alterar o funcionamento de um algoritmo?
+        Tranquilo.
+    </p>
+    <p class="font-sans text-lg pb-6 text-justify">
+        Quer extender de uma estrutura de dados e mudar os modificadores de acesso de private para protected? <span
+            class="italic font-sans text-lg">No problem,</span> vá em frente.
+    </p>
+
+    <p class="font-sans text-lg pb-6 text-justify">
+        Atualmente o código fonte está disponível no Github. Sinta-se a vontade para contribuir, ainda mais agora que o
+        projeto está no início.
+    </p>
+
+    <app-project-card [project]="jstdProject()" />
+
+    <p class="font-sans text-lg pt-6 pb-6 text-justify">
+        No mais é isso! Muito obrigado pela atenção e nos vemos num próximo post.
+    </p>
+
+</div>
