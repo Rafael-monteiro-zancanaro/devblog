@@ -1,15 +1,39 @@
 <div class="w-full h-full">
     <div class="flex flex-col">
-        <h1 class="text-2xl sm:text-3xl font-display font-medium break-words">
-            Seja bem vindo.
+        <h1 class="text-2xl sm:text-3xl font-display font-medium mb-2">
+            Projetos
         </h1>
-        <h2 class="text-lg sm:text-xl font-display font-light text-gray-500 italic pb-5 break-words">
-            Estes são os Últimos projetos que estou desenvolvendo
+        <h2 class="text-lg sm:text-xl font-display font-light text-gray-500 italic pb-8">
+            Repositórios e experimentos que venho desenvolvendo
         </h2>
-        <div class="space-y-4">
-            @for(project of repos(); track $index) {
-            <app-project-card [project]="project" />
-            }
+
+        <div class="flex flex-col border-2 border-palletemagenta p-6 rounded-2xl shadow-xl">
+            <div class="flex flex-row items-center gap-3 pb-4 border-b border-gray-200">
+                <span class="font-tech text-xl text-palletemagenta">GitHub</span>
+                <h3 class="font-display text-2xl font-medium">Projetos recentes</h3>
+            </div>
+
+            <div class="pt-6">
+                @if(repos().length > 0) {
+                <div class="grid grid-cols-1 gap-4">
+                    @for(project of repos(); track project.name) {
+                    <app-project-card [project]="project" />
+                    }
+                </div>
+                } @else {
+                <div class="flex flex-col items-center justify-center border-2 border-gray-200 rounded-xl p-8">
+                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-3">
+                        <span class="font-tech text-xl text-palletemagenta">...</span>
+                    </div>
+                    <p class="font-tech text-lg text-gray-700 text-center">
+                        Carregando projetos
+                    </p>
+                    <p class="font-sans text-sm text-gray-500 text-center mt-1">
+                        Buscando meus repositórios públicos no GitHub
+                    </p>
+                </div>
+                }
+            </div>
         </div>
     </div>
 </div>
