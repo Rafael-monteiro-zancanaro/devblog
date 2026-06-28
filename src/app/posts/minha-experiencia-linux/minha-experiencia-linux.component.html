@@ -1,0 +1,78 @@
+<div class="w-full h-full pb-20">
+    <app-title title="Minha Experiência com Linux"
+        subtitle="Quando o closed-source fecha uma porta, o FOSS abre uma janela." />
+
+    <p class="fone-sans text-lg pb-6 text-justify">Já fazem muitos anos que utilizo Linux como principal kernel. Assim como a maioria das pessoas, utilizei Windows durante a infância e início da adolescência, porém, ao perceber que meu notebook (na época um Acer Aspire 5 com 8Gb de RAM e 1Tb de HD) estava demorando cinco miunutos para iniciar, 3 minutos para apenas abrir o navegador e as vezes alguns prompts de comando abriam do mais absoluto nada, um ímpeto de mudança começou a soar mais alto: <i>Eu precisava fazer algo</i>.</p>
+    <p class="font-sans text-lg text-justify pb-6">A solução mais óbvia seria colocar um SSD, porém, sendo um adolescente desempregado, ia ter que convencer meus pais sobre, então já sabia que não iria rolar. E, como alterar o hardware estava fora de cogitação, sobrava alterar o software.</p>
+    <!-- Adicionar imagem de um acer aspire 5 -->
+    <div class="flex flex-col items-center pt-4 pb-4">
+        <img src="notebook-acer.png" alt="Imagem click jogos" class="w-xl rounded-2xl">
+        <p class="font-sans max-w-3/5 text-center"><b>Imagem 01:</b> Notebook Acer Aspire 5 </p>
+    </div>
+
+    <p class="font-sans text-lg text-justify pb-6">Eu tentei aplicar diversos métodos para reduzir o uso do disco<sup>1</sup>, porém sem sucesso, o que me deixava ainda mais frustrado, e, Vendo que nenhuma outra alternativa restava, tive que fazer o que eu mais temia: Instalar Linux.</p>
+
+    <div class="flex flex-col p-12 rounded-2xl bg-gray-200 mb-12">
+      <p class="font-sans text-lg text-justify pb-6"><sup>1</sup> Meu maior problema na época. Por algum motivo o indicador do disco subia para 99% ~ 100%, e com isso o uso da memória RAM subia também, até o ponto do sistema apenas desistir e congelar.</p>
+    </div>
+
+    <app-title title="Superando o preconceito" />
+
+    <p class="font-sans text-lg text-justify pb-6">Eu tinha uma antipatia com linux que, curiosamente, <i>era mais nutrida pelas opiniões das pessoas ao redor de mim</i> que pelas minhas próprias conclusões. O ano era 2017, a quantidade de sistemas Linux rodando em computadores pessoais estava entre 3 ~ 4% e a opinião de quem eu convivia não era muito animadora.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Meu ensino médio foi atrelado a um cuirso técnico em informática, então não era incomum as aulas de programação serem feitas em um laboratório no qual todas as máquinas eram Linux Mint<sup>2</sup></p>
+
+    <div class="flex flex-col p-12 rounded-2xl bg-gray-200 mb-12">
+      <p class="font-sans text-lg text-justify pb-6"><sup>2</sup> Essa adoção ao Linux pelo IFPR pode ser explicada pelo incentivo do governo a adoção do chamado FOSS (<i>Free and Open Source Software</i>): Software colaborativo e de acesso livre, tanto para acesso quanto para modificação do código-fonte. Além de reduzir os custos operacionais, essa ação foi responsável por colocar o Brasil como o pais mais receptivo ao FOSS na América Latina, e em uma posição relevante em relação ao resto do mundo, sendo comparado como China e Índia. [<a class="text-linkinactive hover:text-linkactive whitespace-nowrap text-lg md:text-base" href="https://strathprints.strath.ac.uk/87500/1/Bwalya-etal-ZJLIS-2019-Adoption-and-use-of-free-and-open-source-software-foss-globally.pdf" target="_blank">Fonte</a>]</p>
+
+      <p class="font-sans text-lg text-justify pb-6">Se considerarmos o contexto atual, onde o Linux vem se tornando uma alternativa cada vez mais atrativa e que representações importantes como a União Européia começaram a adotá-lo nos seus orgãos federais apenas neste ano de 2026 [<a class="text-linkinactive hover:text-linkactive whitespace-nowrap text-sm md:text-base" href="https://exame.com/tecnologia/porque-a-debandada-do-windows-na-europa-sinaliza-uma-nova-era-para-o-linux/" target="_blank">Fonte</a>], podemos dizer que esta lei de incentivo ao FOSS foia lgo bem a frente de seu tempo.</p>
+    </div>
+
+    <p class="font-sans text-lg text-justify pb-6">Ao saber que a aula de laboratório seria realizada em máquinas Linux, os mesmos comentários se repetiam:</p>
+
+    <p class="font-sans text-lg text-justify">
+      - "Eu não sei onde ficam as coisas"
+    </p>
+
+    <p class="font-sans text-lg text-justify">
+       - "Como que eu faço isso sem usar o terminal?"
+    </p>
+
+    <p class="font-sans text-lg text-justify">
+      - "Eu só queria poder baixar e rodar meus programas"
+    </p>
+
+    <p class="font-sans text-lg text-justify pb-6">
+       - "Não tem X programa"
+    </p>
+
+    <p class="font-sans text-lg text-justify pb-6">Por mais que eu atualmente ache que os os 2 últimos casos sejam fruto de uma certa "birra", eu não consigo dizer que meus colegas estavam errados. Não existia uma uma inclusão do usuário "comum" (entenda esse termo como o inverso do que chamamos de <i>power user</i>), esta barreira só começou a ser quebrada atualmente, com os deslizes da Microsoft, aliada a constante evolução das tecnologias para games (Área que as distribuições linux sempre perderam de lavada) e gestão de pacotes, como Flatpaks e AppImages</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Estes comentários sempre me deixaram meio receioso ao utilizar o Mint. Existia uma sensação de que algo estava pronto para dar errado, e que, ou eu iria esbarrar em um problema que me faria gastar tempo em um fórum em inglês, tentando entender do que meu erro se trataria, ou que eu não encontraria uma ferramenta que só era disponível para Windows.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Porém, como não restava alternativa, abri um tutorial no youtube (não lembro exatamente qual, mas provavelmente um do Diolinux) e iniciei a instalação.</p>
+
+    <app-title title="O pós instalação" />
+
+    <p class="font-sans text-lg text-justify pb-6">Acho que a primeira coisa que eu fiz após instalar o mint foi agradecer por ter dado certo, depois abrir o terminal e ficar admirando a tela preta com letras verdes. Fiquei até tempo demais contemplando algo tão simples.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Antes de contar a experiência, devo dizer que sempre que instalo uma distro nova atualmente, tento ser o mais cuidadoso o possível com as configurações e dependências. Não poor medo de algo quebrar, mas por carinho mesmo. Instalar uma distro nova do zero é como organizar um cômodo novo da sua casa, deixar as coisas de qualquer jeito é equuivalente a deixar os móveis sujos ou coisas bagunçadas.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Dito isso, quase tudo que eu poderia fazer de errado naquele Mint eu fiz. Desde instalar pacotes ARM (meu notebook era AMD), instalar <i>tarballs</i> em lugares que obviamente não eram adequados (Até eu entender que o diretório /dev não era pra ferramentas de desenvolvimento, já era tarde demais), deixar dependências quebradas, poluir o ~/.bashrc, entre muitas (MUITAS) outras coisas.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Com o tempo fui entendendo como as coisas funcionavam, seja estudando por vontade própria ou por vivência mesmo (as vezes você pega o <i>feeling</i> de alguns comportamentos e consegue racionalizar sem ter que olhar por debaixo do capô), e progressivamente os problemas foram diminuindo. Atualmente não me estresso nesse quesito e até programo eu mesmo meus <i>workarounds</i> caso seja necessário.</p>
+
+    <app-title title="Conclusão" subtitle="O que o penguim me ensinou?" />
+
+    <p class="font-sans text-lg text-justify pb-6">De 2017 pra cá já se passaram quase 10 anos, e posso dizer que já testei muita coisa relacionada a linux: Usei diversas distribuições diferentes (desde Debian até Void em modo live em pendrive com toram), já tentei programar em C a nível de S.O. (Cheguei até a criar um <i>keylogger</i> simples), e atualmente estou estudando o Kernel Linux, mas, acima de tudo, posso dizer que me diverti muito.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Se você tem curiosidade mas se sente com receio de instalar linux por algum motivo que citei nesse post, o conselho que posso te dar é que estamos em uma ótima época para migrar para linux. Com os tropeços da Microsoft no mercado de sistemas operacionais, a quantidade de pessoas na comunidade linux e FOSS no geral aumentou bastante.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Outros fatos animadores são: A evolução das tecnologias open source, que permitem uma instalação, configuração mais simples, e uma maior diversidade de alternativas a softwares proprietários (sendo que algumas tecnologias FOSS até superam as closed source), a maior quantidade de pessoas dispostas a ajudar quem é mais iniciante, e, pelo numero de pessoas usando linux e FOSS em geral aumentar, empresas que apenas disponibilizavam software para Windows começaram a disponibilizar este acesso para linux também.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Enfim, existe disversas distribuições linux, cada uma com seu nicho: desde as voltadas para iniciantes como Zorin, Ubuntu e Mint. Até outras que agradam necessidades super específicas: Como o Void Linux, que disponibiliza uma versão que utiliza musl como biblioteca de funções C padrão e utiliza runit como init system, ou Gentoo, que permite compilar seu sistema inteiro.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Acho que a conclusão que posso dar para este post é que linux me ensinou muitas coisas, algumas por amor, outras pela dor. Mas é algo que de certa forma mudou a maneira a qual vejo a tecnologia no geral.</p>
+
+    <p class="font-sans text-lg text-justify pb-6">Espero que tenha gostado da leitura, Nos vemos em uma próxima!</p>
+</div>
